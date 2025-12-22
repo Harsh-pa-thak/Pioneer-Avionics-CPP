@@ -19,12 +19,11 @@
 */
 
 /**************************************************************************************************
-* File:        statesmanager.h
+* File:        nrf24.h
 * Author:      Kunsh Jain
 * Created On:  2025-12-22
-* Brief:       Flight state definitions and manager interface.
-* Description: Declares `FlightState` enum and `StatesManager` which encapsulates
-*              state transitions and handlers.
+* Brief:       Minimal NRF24 radio helper.
+* Description: Provides basic SPI CS/CE control and send helper.
 ***************************************************************************************************
 * HISTORY:
 * +----- (NEW | MODify | ADD | DELete)
@@ -34,53 +33,21 @@
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
 
-#ifndef STATESMANAGER_H
-#define STATESMANAGER_H
+#ifndef NRF24_H
+#define NRF24_H
 
-/**
- * \brief Enumerates high-level flight states.
- */
-enum class FlightState {
-    BOOT,
-    IDLE,
-    ARMED,
-    LAUNCH,
-    ASCENT,
-    CRUISING,
-    APOGEE,
-    DEPLOYMENT,
-    DESCENT,
-    LANDED,
-    FAILSAFE
-};
+#include "pico/stdlib.h"
+#include "hardware/spi.h"
 
-/**
- * \brief Manages current flight state and provides handlers for each phase.
- */
-class StatesManager {
+/** \brief Minimal helper for NRF24 SPI radio. */
+class NRF24 {
 public:
-    StatesManager();
-    ~StatesManager();
-
-    // State Logic Handlers
-    void HandleBoot();
-    void HandleIdle();
-    void HandleArmed();
-    void HandleLaunch();
-    void HandleAscent();
-    void HandleCruising();
-    void HandleApogee();
-    void HandleDeployment();
-    void HandleDescent();
-    void HandleLanded();
-    void HandleFailsafe();
-
-    // State Management
-    void SetState(FlightState newState);
-    FlightState GetState() const;
-
+    NRF24(spi_inst_t* spi = spi1, uint cs = 13, uint ce = 16);
+    void Init();
+    void Send(const uint8_t* data, size_t len);
 private:
-    FlightState currentState;
+    spi_inst_t* _spi;
+    uint _cs, _ce;
 };
 
 #endif

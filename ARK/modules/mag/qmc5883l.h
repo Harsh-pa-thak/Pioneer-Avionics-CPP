@@ -19,12 +19,11 @@
 */
 
 /**************************************************************************************************
-* File:        statesmanager.h
+* File:        qmc5883l.h
 * Author:      Kunsh Jain
 * Created On:  2025-12-22
-* Brief:       Flight state definitions and manager interface.
-* Description: Declares `FlightState` enum and `StatesManager` which encapsulates
-*              state transitions and handlers.
+* Brief:       QMC5883L magnetometer interface.
+* Description: Provides init and raw read helpers plus a simple heading computation.
 ***************************************************************************************************
 * HISTORY:
 * +----- (NEW | MODify | ADD | DELete)
@@ -34,53 +33,23 @@
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
 
-#ifndef STATESMANAGER_H
-#define STATESMANAGER_H
+#ifndef QMC5883L_H
+#define QMC5883L_H
 
-/**
- * \brief Enumerates high-level flight states.
- */
-enum class FlightState {
-    BOOT,
-    IDLE,
-    ARMED,
-    LAUNCH,
-    ASCENT,
-    CRUISING,
-    APOGEE,
-    DEPLOYMENT,
-    DESCENT,
-    LANDED,
-    FAILSAFE
-};
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
+#include <cmath>
 
-/**
- * \brief Manages current flight state and provides handlers for each phase.
- */
-class StatesManager {
+/** \brief QMC5883L magnetometer helper. */
+class QMC5883L {
 public:
-    StatesManager();
-    ~StatesManager();
-
-    // State Logic Handlers
-    void HandleBoot();
-    void HandleIdle();
-    void HandleArmed();
-    void HandleLaunch();
-    void HandleAscent();
-    void HandleCruising();
-    void HandleApogee();
-    void HandleDeployment();
-    void HandleDescent();
-    void HandleLanded();
-    void HandleFailsafe();
-
-    // State Management
-    void SetState(FlightState newState);
-    FlightState GetState() const;
-
+    QMC5883L(i2c_inst_t* i2c = i2c1);
+    bool Init();
+    void ReadRaw(int16_t &x, int16_t &y, int16_t &z);
+    float GetHeading();
 private:
-    FlightState currentState;
+    i2c_inst_t* _i2c;
+    const uint8_t addr = 0x0D;
 };
 
 #endif

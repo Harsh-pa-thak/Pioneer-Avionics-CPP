@@ -19,12 +19,11 @@
 */
 
 /**************************************************************************************************
-* File:        statesmanager.h
+* File:        l89ha.h
 * Author:      Kunsh Jain
 * Created On:  2025-12-22
-* Brief:       Flight state definitions and manager interface.
-* Description: Declares `FlightState` enum and `StatesManager` which encapsulates
-*              state transitions and handlers.
+* Brief:       L89HA GNSS receiver interface.
+* Description: Minimal UART-based GNSS wrapper for raw reads.
 ***************************************************************************************************
 * HISTORY:
 * +----- (NEW | MODify | ADD | DELete)
@@ -34,53 +33,21 @@
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
 
-#ifndef STATESMANAGER_H
-#define STATESMANAGER_H
+#ifndef L89HA_H
+#define L89HA_H
 
-/**
- * \brief Enumerates high-level flight states.
- */
-enum class FlightState {
-    BOOT,
-    IDLE,
-    ARMED,
-    LAUNCH,
-    ASCENT,
-    CRUISING,
-    APOGEE,
-    DEPLOYMENT,
-    DESCENT,
-    LANDED,
-    FAILSAFE
-};
+#include "pico/stdlib.h"
+#include "hardware/uart.h"
 
-/**
- * \brief Manages current flight state and provides handlers for each phase.
- */
-class StatesManager {
+/** \brief Simple UART GNSS helper for L89HA module. */
+class L89HA {
 public:
-    StatesManager();
-    ~StatesManager();
-
-    // State Logic Handlers
-    void HandleBoot();
-    void HandleIdle();
-    void HandleArmed();
-    void HandleLaunch();
-    void HandleAscent();
-    void HandleCruising();
-    void HandleApogee();
-    void HandleDeployment();
-    void HandleDescent();
-    void HandleLanded();
-    void HandleFailsafe();
-
-    // State Management
-    void SetState(FlightState newState);
-    FlightState GetState() const;
-
+    L89HA(uart_inst_t* uart = uart0, uint baud = 9600);
+    void Init(uint tx = 0, uint rx = 1);
+    int ReadRaw(char* buffer, size_t len);
 private:
-    FlightState currentState;
+    uart_inst_t* _uart;
+    uint _baud;
 };
 
 #endif

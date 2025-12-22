@@ -375,29 +375,29 @@ ARK/modules/ignitor/ignitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s
 .PHONY : ARK/modules/ignitor/ignitor.cpp.s
 
-ARK/modules/magnetometer/qmc5883l.o: ARK/modules/magnetometer/qmc5883l.cpp.o
-.PHONY : ARK/modules/magnetometer/qmc5883l.o
+ARK/modules/mag/qmc5883l.o: ARK/modules/mag/qmc5883l.cpp.o
+.PHONY : ARK/modules/mag/qmc5883l.o
 
 # target to build an object file
-ARK/modules/magnetometer/qmc5883l.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o
-.PHONY : ARK/modules/magnetometer/qmc5883l.cpp.o
+ARK/modules/mag/qmc5883l.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o
+.PHONY : ARK/modules/mag/qmc5883l.cpp.o
 
-ARK/modules/magnetometer/qmc5883l.i: ARK/modules/magnetometer/qmc5883l.cpp.i
-.PHONY : ARK/modules/magnetometer/qmc5883l.i
+ARK/modules/mag/qmc5883l.i: ARK/modules/mag/qmc5883l.cpp.i
+.PHONY : ARK/modules/mag/qmc5883l.i
 
 # target to preprocess a source file
-ARK/modules/magnetometer/qmc5883l.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.i
-.PHONY : ARK/modules/magnetometer/qmc5883l.cpp.i
+ARK/modules/mag/qmc5883l.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i
+.PHONY : ARK/modules/mag/qmc5883l.cpp.i
 
-ARK/modules/magnetometer/qmc5883l.s: ARK/modules/magnetometer/qmc5883l.cpp.s
-.PHONY : ARK/modules/magnetometer/qmc5883l.s
+ARK/modules/mag/qmc5883l.s: ARK/modules/mag/qmc5883l.cpp.s
+.PHONY : ARK/modules/mag/qmc5883l.s
 
 # target to generate assembly for a file
-ARK/modules/magnetometer/qmc5883l.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.s
-.PHONY : ARK/modules/magnetometer/qmc5883l.cpp.s
+ARK/modules/mag/qmc5883l.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s
+.PHONY : ARK/modules/mag/qmc5883l.cpp.s
 
 ARK/modules/mpu/mpu9250.o: ARK/modules/mpu/mpu9250.cpp.o
 .PHONY : ARK/modules/mpu/mpu9250.o
@@ -2419,9 +2419,9 @@ help:
 	@echo "... ARK/modules/ignitor/ignitor.o"
 	@echo "... ARK/modules/ignitor/ignitor.i"
 	@echo "... ARK/modules/ignitor/ignitor.s"
-	@echo "... ARK/modules/magnetometer/qmc5883l.o"
-	@echo "... ARK/modules/magnetometer/qmc5883l.i"
-	@echo "... ARK/modules/magnetometer/qmc5883l.s"
+	@echo "... ARK/modules/mag/qmc5883l.o"
+	@echo "... ARK/modules/mag/qmc5883l.i"
+	@echo "... ARK/modules/mag/qmc5883l.s"
 	@echo "... ARK/modules/mpu/mpu9250.o"
 	@echo "... ARK/modules/mpu/mpu9250.i"
 	@echo "... ARK/modules/mpu/mpu9250.s"

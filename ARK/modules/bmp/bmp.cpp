@@ -1,8 +1,45 @@
+/*
+                                        ::                                                      
+                                        ::                                                      
+                                        ::                                                      
+                                        ::                                                      
+                                        ::                                                      
+    ..    ..........    :.      ::      ::     .........  ..    ..........    ...      .        
+    ::    ::            : .:.   ::     .::.       ::      ::    ::       :    :: :.    :        
+    ::    ::   ..:::    :   .:. ::    ::::::      ::      ::    ::       :    ::   ::  :        
+    ::    ::......::    :      :::    ::::::      ::      ::    ::.......:    ::     :::        
+                                      ::::::                                                    
+                                      :.::.:                                                    
+                         .::::          ::          ::::.                                       
+                       .::::::::.       ::       .:::::::::                                   
+                       ::::::::::::....::::.....:::::::::::                                   
+                        .:::::::::::::::::::::::::::::::::.        
+
+                  © Copyright of Ignition Avionics
+*/
+
+/**************************************************************************************************
+* File:        bmp.cpp
+* Author:      Kunsh Jain
+* Created On:  2025-12-22
+* Brief:       BMP280 sensor driver implementation.
+* Description: Implements initialization, calibration and raw reads for BMP280.
+***************************************************************************************************
+* HISTORY:
+* +----- (NEW | MODify | ADD | DELete)
+* |
+* No#   |       when       who                  what
+******+*********+**********+********************+**************************************************
+* 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
+**************************************************************************************************/
+
 #include "bmp.h"
 
+/** \brief Construct BMP280 wrapper with I2C instance and address. */
 BMP280::BMP280(i2c_inst_t* i2c_instance, uint8_t addr) 
     : i2c(i2c_instance), address(addr), t_fine(0), seaLevelPressure(1013.25f) {}
 
+/** \brief Initialize BMP280 on given SDA/SCL pins. */
 bool BMP280::Init(uint sda, uint scl, uint32_t baudrate) {
     i2c_init(i2c, baudrate);
     gpio_set_function(sda, GPIO_FUNC_I2C);
@@ -20,13 +57,14 @@ bool BMP280::Init(uint sda, uint scl, uint32_t baudrate) {
     ReadCalibration();
 
     uint8_t config[2];
-    config[0] = 0xF4; 
-    config[1] = 0x27; 
+    config[0] = 0xF4;
+    config[1] = 0x27;
     i2c_write_blocking(i2c, address, config, 2, false);
 
     return true;
 }
 
+/** \brief Read calibration block from device into `calib`. */
 void BMP280::ReadCalibration() {
     uint8_t data[24];
     uint8_t reg = 0x88;
@@ -47,6 +85,7 @@ void BMP280::ReadCalibration() {
     calib.dig_P9 = data[23] << 8 | data[22];
 }
 
+/** \brief Read raw pressure/temp ADC values from sensor. */
 void BMP280::GetRawData(int32_t &adc_P, int32_t &adc_T) {
     uint8_t data[6];
     uint8_t reg = 0xF7;
@@ -57,12 +96,14 @@ void BMP280::GetRawData(int32_t &adc_P, int32_t &adc_T) {
     adc_T = (data[3] << 12) | (data[4] << 4) | (data[5] >> 4);
 }
 
+/** \brief Get compensated temperature in degrees Celsius. */
 float BMP280::ReadTemperature() {
     int32_t p, t;
     GetRawData(p, t);
     return CompensateTemp(t) / 100.0f;
 }
 
+/** \brief Get compensated pressure (returns hPa). */
 float BMP280::ReadPressure() {
     int32_t p, t;
     GetRawData(p, t);
@@ -70,11 +111,13 @@ float BMP280::ReadPressure() {
     return CompensatePressure(p) / 25600.0f; // Returns hPa
 }
 
+/** \brief Compute altitude (meters) from pressure using barometric formula. */
 float BMP280::ReadAltitude(float seaLevelhPa) {
     float pressure = ReadPressure();
     return 44330.0f * (1.0f - pow(pressure / seaLevelhPa, 0.1903f));
 }
 
+/** \brief Calibrate sea-level pressure based on a known altitude. */
 void BMP280::CalibrateSeaLevel(float knownAltitude) {
     float pressure = ReadPressure();
     seaLevelPressure = pressure / pow(1.0f - (knownAltitude / 44330.0f), 5.255f);

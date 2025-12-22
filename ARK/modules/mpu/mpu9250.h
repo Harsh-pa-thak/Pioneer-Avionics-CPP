@@ -19,12 +19,11 @@
 */
 
 /**************************************************************************************************
-* File:        statesmanager.h
+* File:        mpu9250.h
 * Author:      Kunsh Jain
 * Created On:  2025-12-22
-* Brief:       Flight state definitions and manager interface.
-* Description: Declares `FlightState` enum and `StatesManager` which encapsulates
-*              state transitions and handlers.
+* Brief:       MPU9250/MPU-family IMU interface.
+* Description: Provides Init and ReadData methods for accelerometer, gyro and temp.
 ***************************************************************************************************
 * HISTORY:
 * +----- (NEW | MODify | ADD | DELete)
@@ -34,53 +33,21 @@
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
 
-#ifndef STATESMANAGER_H
-#define STATESMANAGER_H
+#ifndef MPU9250_H
+#define MPU9250_H
 
-/**
- * \brief Enumerates high-level flight states.
- */
-enum class FlightState {
-    BOOT,
-    IDLE,
-    ARMED,
-    LAUNCH,
-    ASCENT,
-    CRUISING,
-    APOGEE,
-    DEPLOYMENT,
-    DESCENT,
-    LANDED,
-    FAILSAFE
-};
+#include "pico/stdlib.h"
+#include "hardware/i2c.h"
 
-/**
- * \brief Manages current flight state and provides handlers for each phase.
- */
-class StatesManager {
+/** \brief Simple MPU9250 wrapper for I2C reads. */
+class MPU9250 {
 public:
-    StatesManager();
-    ~StatesManager();
-
-    // State Logic Handlers
-    void HandleBoot();
-    void HandleIdle();
-    void HandleArmed();
-    void HandleLaunch();
-    void HandleAscent();
-    void HandleCruising();
-    void HandleApogee();
-    void HandleDeployment();
-    void HandleDescent();
-    void HandleLanded();
-    void HandleFailsafe();
-
-    // State Management
-    void SetState(FlightState newState);
-    FlightState GetState() const;
-
+    MPU9250(i2c_inst_t* i2c_inst = i2c1);
+    bool Init();
+    void ReadData(float* acc, float* gyro, float* temp);
 private:
-    FlightState currentState;
+    i2c_inst_t* _i2c;
+    const uint8_t addr = 0x68;
 };
 
 #endif
