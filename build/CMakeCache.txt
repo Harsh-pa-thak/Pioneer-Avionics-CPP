@@ -260,6 +260,9 @@ FETCHCONTENT_QUIET:BOOL=ON
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
 //PICO target board (e.g. pico, pico2)
 PICO_BOARD:STRING=pico
 
@@ -335,6 +338,12 @@ pico_sdk_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 pico_sdk_SOURCE_DIR:STATIC=/home/kunsh/.pico-sdk/sdk/2.2.0
 
+//The directory containing a CMake configuration file for picotool.
+picotool_DIR:PATH=picotool_DIR-NOTFOUND
+
+//Directory where picotool has been installed
+picotool_INSTALL_DIR:PATH=/home/kunsh/Ignition/Pioneer/build/_deps
+
 //The directory containing a CMake configuration file for pioasm.
 pioasm_DIR:PATH=pioasm_DIR-NOTFOUND
 
@@ -373,6 +382,8 @@ CMAKE_ASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_ASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_FLAGS_RELWITHDEBINFO
 CMAKE_ASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//STRINGS property for variable: CMAKE_BUILD_TYPE
+CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;MinSizeRel;RelWithDebInfo
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/kunsh/Ignition/Pioneer/build
 //Major version of cmake used to create the current loaded cache
@@ -465,7 +476,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=98
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -517,6 +528,8 @@ DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 FAMILY_MCUS:INTERNAL=RP2040
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.12.3()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 PICO_32BIT:INTERNAL=1
 PICO_ARM:INTERNAL=1
 PICO_BOOT_STAGE2_DIR:INTERNAL=/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/boot_stage2

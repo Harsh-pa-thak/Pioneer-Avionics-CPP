@@ -241,7 +241,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kunsh/Ignition/Pioneer/ARK/modules/buzzer/buzzer.cpp" "CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o.d"
   "/home/kunsh/Ignition/Pioneer/ARK/modules/gnss/l89ha.cpp" "CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o.d"
   "/home/kunsh/Ignition/Pioneer/ARK/modules/ignitor/ignitor.cpp" "CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o.d"
-  "/home/kunsh/Ignition/Pioneer/ARK/modules/magnetometer/qmc5883l.cpp" "CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o.d"
+  "/home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp" "CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o.d"
   "/home/kunsh/Ignition/Pioneer/ARK/modules/mpu/mpu9250.cpp" "CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o.d"
   "/home/kunsh/Ignition/Pioneer/ARK/modules/nrf/nrf24.cpp" "CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o.d"
   "/home/kunsh/Ignition/Pioneer/ARK/modules/sdcard/sdcard.cpp" "CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o" "gcc" "CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o.d"

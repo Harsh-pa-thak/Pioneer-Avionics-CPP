@@ -19,12 +19,11 @@
 */
 
 /**************************************************************************************************
-* File:        statesmanager.h
+* File:        l89ha.cpp
 * Author:      Kunsh Jain
 * Created On:  2025-12-22
-* Brief:       Flight state definitions and manager interface.
-* Description: Declares `FlightState` enum and `StatesManager` which encapsulates
-*              state transitions and handlers.
+* Brief:       L89HA GNSS receiver implementation.
+* Description: UART initialization and raw read helper implementation.
 ***************************************************************************************************
 * HISTORY:
 * +----- (NEW | MODify | ADD | DELete)
@@ -34,53 +33,24 @@
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
 
-#ifndef STATESMANAGER_H
-#define STATESMANAGER_H
+#include "l89ha.h"
 
-/**
- * \brief Enumerates high-level flight states.
- */
-enum class FlightState {
-    BOOT,
-    IDLE,
-    ARMED,
-    LAUNCH,
-    ASCENT,
-    CRUISING,
-    APOGEE,
-    DEPLOYMENT,
-    DESCENT,
-    LANDED,
-    FAILSAFE
-};
+/** \brief Construct GNSS wrapper specifying UART instance and baud. */
+L89HA::L89HA(uart_inst_t* uart, uint baud) : _uart(uart), _baud(baud) {}
 
-/**
- * \brief Manages current flight state and provides handlers for each phase.
- */
-class StatesManager {
-public:
-    StatesManager();
-    ~StatesManager();
+/** \brief Initialize UART pins and baudrate for GNSS receiver. */
+void L89HA::Init(uint tx, uint rx) {
+    uart_init(_uart, _baud);
+    gpio_set_function(tx, GPIO_FUNC_UART);
+    gpio_set_function(rx, GPIO_FUNC_UART);
+}
 
-    // State Logic Handlers
-    void HandleBoot();
-    void HandleIdle();
-    void HandleArmed();
-    void HandleLaunch();
-    void HandleAscent();
-    void HandleCruising();
-    void HandleApogee();
-    void HandleDeployment();
-    void HandleDescent();
-    void HandleLanded();
-    void HandleFailsafe();
-
-    // State Management
-    void SetState(FlightState newState);
-    FlightState GetState() const;
-
-private:
-    FlightState currentState;
-};
-
-#endif
+/** \brief Read available raw bytes from GNSS into `buffer`. Returns bytes read. */
+int L89HA::ReadRaw(char* buffer, size_t len) {
+    int i = 0;
+    while (uart_is_readable(_uart) && i < (int)len - 1) {
+        buffer[i++] = uart_getc(_uart);
+    }
+    buffer[i] = '\0';
+    return i;
+}

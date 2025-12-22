@@ -181,19 +181,19 @@ CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/ignitor/ignitor.cpp -o CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s
 
-CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/magnetometer/qmc5883l.cpp
-CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/magnetometer/qmc5883l.cpp
+CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: CMakeFiles/pioneer.dir/flags.make
+CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp
+CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp
 
-CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/magnetometer/qmc5883l.cpp > CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.i
+CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp > CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i
 
-CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/magnetometer/qmc5883l.cpp -o CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.s
+CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp -o CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/mpu/mpu9250.cpp
@@ -1440,7 +1440,7 @@ pioneer_OBJECTS = \
 "CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o" \
-"CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o" \
+"CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o" \
@@ -1542,7 +1542,7 @@ pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o
-pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/magnetometer/qmc5883l.cpp.o
+pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o
