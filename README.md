@@ -5,7 +5,7 @@
   <img src="https://camo.githubusercontent.com/fbe262a7085aeff41e78915220b88792c6cd26c1964e2c4b91e312e948f2d7e8/68747470733a2f2f7465616d69676e6974696f6e2e73706163652f6c6f676f2f686561642d6c6f676f2e706e67" alt="Team Ignition" width="120"/>
 </div>
 
-Maintainer: Kunsh Jain
+Maintainer: Avionics-Software Department.
 
 --------------------------------------------------------------------------------
 ## Overview
