@@ -9,3 +9,4 @@ data/*
 !logs/.gitkeep
 !data/.gitkeep
 
+.vscode
