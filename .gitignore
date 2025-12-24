@@ -1,12 +1,10 @@
-# Ignore everything in these folders
-.vscode/*
-build/*
-logs/*
-data/*
+# Ignore VS Code settings and build/data logs
+.vscode/
+build/
+logs/
+data/
 
 # But do not ignore the .gitkeep files themselves
 !build/.gitkeep
 !logs/.gitkeep
 !data/.gitkeep
-
-.vscode
