@@ -46,8 +46,7 @@
  */
 Loops::Loops() {
     wdt.Init(5000);
-    sleep_ms(2000);
-    sensors.InitAll();
+    
 }
 
 /**
@@ -87,7 +86,7 @@ void Loops::Run() {
             }
 
             switch (manager.GetState()) {
-                case FlightState::BOOT:
+                case FlightState::BOOT://add sensors.InitAll();
                     manager.HandleBoot();
                     break;
                 case FlightState::IDLE:
@@ -125,8 +124,6 @@ void Loops::Run() {
             lastStateMs = now;
         }
 
-        // Yield without blocking long; keeps USB/SDK responsive
-        tight_loop_contents();
-        sleep_ms(1);
+        
     }
 }
