@@ -1,0 +1,22 @@
+motor:
+  Nozzle Radius: 0.05 m
+  Nozzle Throat Radius: 0.0055 m
+
+Grain Details:
+  Number of Grains: 4
+  Grain Spacing: 0.001 m
+  Grain Density: 1841 kg/m3
+  Grain Outer Radius: 0.0315 m
+  Grain Inner Radius: 0.0165 m
+  Grain Height: 0.115 m
+  Grain Volume: 0.000 m3
+  Grain Mass: 0.479 kg
+
+Motor Details:
+  Total Burning Time: 2.5 s
+  Total Propellant Mass: 1.916 kg
+  Structural Mass Ratio: 0.723
+  Average Propellant Exhaust Velocity: 1158.576 m/s
+  Average Thrust: 887.725 N
+  Maximum Thrust: 1182.8406 N at 1.05 s after ignition.
+  Total Impulse: 2219.313 Ns

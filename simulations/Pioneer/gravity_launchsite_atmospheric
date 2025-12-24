@@ -1,0 +1,26 @@
+gravity:
+  value(at surface): 9.7830  # m/s^2
+  description: Standard gravity at Earth's surface
+  value(at altitude): 9.7803  # m/s^2
+  description: Gravity at altitude of 5000 meters
+
+
+launch_site:
+  name: Custom Site
+  latitude: 13.46856
+  longitude: 80.00422
+  elevation: 20.6  
+  description: Launch site coordinates and elevation as per simulation
+  Launch Site UTM coordinates: 1042247.35 E    1494478.61 N
+  Launch Site UTM zone: 43P
+  Launch Site Surface Elevation: 44.7
+
+
+atmosphere:
+  model: Forecast
+  Atmospheric Model Type: Forecast
+  Forecast Maximum Height: 5.000 km
+  Forecast Time Period: from 2025-04-18 18:00:00 to 2025-05-04 18:00:00 utc
+  Forecast Hour Interval: 3 hrs
+  Forecast Latitude Range: From -90.0° to 90.0°  # meters
+  description: Atmospheric model and max expected height for simulation
