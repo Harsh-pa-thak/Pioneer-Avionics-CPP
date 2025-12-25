@@ -99,20 +99,17 @@ See the `Template_module` example in the project guide for full templates.
 --------------------------------------------------------------------------------
 ## What I changed (notes)
 
-- Added ASCII headers, HISTORY block (with your name `Kunsh Jain`) and Doxygen
+- Added ASCII headers, HISTORY block (with name `User`) and Doxygen
   comments to the majority of ARK source and header files. No runtime logic
   was changed — only documentation and headers were added.
 - Updated `CMakeLists.txt` with one-line comments describing each section.
-
-If you want the commit containing these changes to be squashed or split into
-smaller commits, say the word and I can prepare a suggested `git` series.
 
 --------------------------------------------------------------------------------
 ## Contributing
 
 🤝 Contributing to Team Ignition
 
-Create a feature branch from `workingiteration1`:
+Create a feature branch from `workingiteration{No}`:
 
 ```bash
 git checkout -b feature/your-feature-name
@@ -155,7 +152,7 @@ modules.
 --------------------------------------------------------------------------------
 ## Contact / Authors
 
-Maintainer: Kunsh Jain
+Maintainer: Kunsh
 
 --------------------------------------------------------------------------------
-Thank you for contributing to Team Ignition.
+Thank you for contributing to Team Ignition Pioneer-Codes.
