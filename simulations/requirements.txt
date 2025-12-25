@@ -1,0 +1,23 @@
+# Pioneer Flight Simulations - Python Dependencies
+# Install: pip install -r requirements.txt
+
+# Core simulation engine
+rocketpy>=1.0.0
+
+# Scientific computing
+numpy>=1.20.0
+scipy>=1.7.0
+
+# Visualization
+matplotlib>=3.4.0
+
+# Jupyter support
+jupyter>=1.0.0
+jupyterlab>=3.0.0
+ipywidgets>=7.6.0
+
+# Data handling
+pandas>=1.3.0
+
+# Optional: For KML/Earth exports
+simplekml>=1.3.0
