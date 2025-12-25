@@ -1,6 +1,8 @@
-# =============================================================================
-# Pioneer Avionics - Git Ignore Configuration
-# =============================================================================
+# Ignore VS Code settings and build/data logs
+.vscode/
+build/
+logs/
+data/
 
 # -----------------------------------------------------------------------------
 # IDE & Editor Settings
@@ -71,3 +73,5 @@ desktop.ini
 *.tmp
 *.temp
 *.bak
+!logs/.gitkeep
+!data/.gitkeep
