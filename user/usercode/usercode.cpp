@@ -19,44 +19,38 @@
 */
 
 /**************************************************************************************************
-* File:        loops.h
+* File:        main.cpp
 * Author:      Kunsh Jain
 * Created On:  2025-12-22
-* Brief:       Main loop declarations.
-* Description: Contains the `Loops` class used to run periodic tasks.
+* Brief:       Entry point for Pioneer firmware on Pico.
+* Description: Initializes stdio and starts the `Ark` application which runs the main loop.
 ***************************************************************************************************
 * HISTORY:
 * +----- (NEW | MODify | ADD | DELete)
 * |
 * No#   |       when       who                  what
 ******+*********+**********+********************+**************************************************
-* 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
+* 000  NEW      2025-12-22   Kunsh Jain           Added UserCode part to StatesManager
 **************************************************************************************************/
 
-#ifndef LOOPS_H
-#define LOOPS_H
+#include "../../ARK/kernel/statesmanager.h"
 
-#include "statesmanager.h"
-#include "../../tests/test.hpp" 
-#include "../system/watchdogs.h"
-#include "../system/timer.hpp"
-#include "../system/sensors.h"
-#include "../config.h"
-
-/**
- * \brief Main periodic loop runner.
- * \details Orchestrates high-frequency sensor updates and 10Hz state logic.
- */
-class Loops {
-public:
-    Loops();
-    void Run();
-
-private:
-    void StreamTelemetry();
-    StatesManager manager;
-    Watchdogs wdt; 
-    SensorManager sensors;
-};
-
-#endif // LOOPS_H
+void StatesManager::onUserLogic(FlightState state) {
+    switch(state) {
+        case FlightState::IDLE:
+            // Check sensors to trigger launch
+            break;
+        case FlightState::ASCENT:
+            // Monitor for Apogee
+            break;
+        case FlightState::APOGEE:
+            // Deploy chutes
+            SetState(FlightState::DESCENT);
+            break;
+        case FlightState::LANDED:
+            // Finalize logs
+            break;
+        default:
+            break;
+    }
+}

@@ -33,54 +33,26 @@
 ******+*********+**********+********************+**************************************************
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
-
 #ifndef STATESMANAGER_H
 #define STATESMANAGER_H
 
-/**
- * \brief Enumerates high-level flight states.
- */
 enum class FlightState {
-    BOOT,
-    IDLE,
-    ARMED,
-    LAUNCH,
-    ASCENT,
-    CRUISING,
-    APOGEE,
-    DEPLOYMENT,
-    DESCENT,
-    LANDED,
-    FAILSAFE
+    BOOT, IDLE, ARMED, LAUNCH, ASCENT, CRUISING, 
+    APOGEE, DEPLOYMENT, DESCENT, LANDED, FAILSAFE
 };
 
-/**
- * \brief Manages current flight state and provides handlers for each phase.
- */
 class StatesManager {
 public:
     StatesManager();
-    ~StatesManager();
-
-    // State Logic Handlers
-    void HandleBoot();
-    void HandleIdle();
-    void HandleArmed();
-    void HandleLaunch();
-    void HandleAscent();
-    void HandleCruising();
-    void HandleApogee();
-    void HandleDeployment();
-    void HandleDescent();
-    void HandleLanded();
-    void HandleFailsafe();
-
-    // State Management
+    void onUserLogic(FlightState state);
+    void HandleBoot(); void HandleIdle(); void HandleArmed();
+    void HandleLaunch(); void HandleAscent(); void HandleCruising();
+    void HandleApogee(); void HandleDeployment(); void HandleDescent();
+    void HandleLanded(); void HandleFailsafe();
     void SetState(FlightState newState);
     FlightState GetState() const;
-
 private:
     FlightState currentState;
 };
 
-#endif
+#endif // STATESMANAGER_H

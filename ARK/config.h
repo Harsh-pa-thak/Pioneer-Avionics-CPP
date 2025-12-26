@@ -41,4 +41,6 @@
 // Example global configuration defines
 #define PIONEER_DEFAULT_BAUD    (9600U)
 
+
+
 #endif // PIONEER_CONFIG_H
