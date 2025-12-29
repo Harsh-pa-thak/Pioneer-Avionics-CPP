@@ -32,37 +32,20 @@
 ******+*********+**********+********************+**************************************************
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
 **************************************************************************************************/
-
 #include "statesmanager.h"
 
-/** \brief Construct and set initial flight state to BOOT. */
-StatesManager::StatesManager() {
-    currentState = FlightState::BOOT;
-}
+StatesManager::StatesManager() { currentState = FlightState::BOOT; }
+void StatesManager::SetState(FlightState newState) { currentState = newState; }
+FlightState StatesManager::GetState() const { return currentState; }
 
-/** \brief Default destructor. */
-StatesManager::~StatesManager() {
-}
-
-/** \brief Set the current flight state. */
-void StatesManager::SetState(FlightState newState) {
-    currentState = newState;
-}
-
-/** \brief Get the current flight state. */
-FlightState StatesManager::GetState() const {
-    return currentState;
-}
-
-// State handlers (currently stubs; implement logic as required)
-void StatesManager::HandleBoot() {}
-void StatesManager::HandleIdle() {}
-void StatesManager::HandleArmed() {}
-void StatesManager::HandleLaunch() {}
-void StatesManager::HandleAscent() {}
-void StatesManager::HandleCruising() {}
-void StatesManager::HandleApogee() {}
-void StatesManager::HandleDeployment() {}
-void StatesManager::HandleDescent() {}
-void StatesManager::HandleLanded() {}
-void StatesManager::HandleFailsafe() {}
+void StatesManager::HandleBoot()       { onUserLogic(currentState); }
+void StatesManager::HandleIdle()       { onUserLogic(currentState); }
+void StatesManager::HandleArmed()      { onUserLogic(currentState); }
+void StatesManager::HandleLaunch()     { onUserLogic(currentState); }
+void StatesManager::HandleAscent()     { onUserLogic(currentState); }
+void StatesManager::HandleCruising()   { onUserLogic(currentState); }
+void StatesManager::HandleApogee()     { onUserLogic(currentState); }
+void StatesManager::HandleDeployment() { onUserLogic(currentState); }
+void StatesManager::HandleDescent()    { onUserLogic(currentState); }
+void StatesManager::HandleLanded()     { onUserLogic(currentState); }
+void StatesManager::HandleFailsafe()   { onUserLogic(currentState); }

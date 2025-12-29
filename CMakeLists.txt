@@ -1,37 +1,36 @@
-/*
-                                        ::                                                      
-                                        ::                                                      
-                                        ::                                                      
-                                        ::                                                      
-                                        ::                                                      
-    ..    ..........    :.      ::      ::     .........  ..    ..........    ...      .        
-    ::    ::            : .:.   ::     .::.       ::      ::    ::       :    :: :.    :        
-    ::    ::   ..:::    :   .:. ::    ::::::      ::      ::    ::       :    ::   ::  :        
-    ::    ::......::    :      :::    ::::::      ::      ::    ::.......:    ::     :::        
-                                      ::::::                                                    
-                                      :.::.:                                                    
-                         .::::          ::          ::::.                                       
-                       .::::::::.       ::       .:::::::::                                   
-                       ::::::::::::....::::.....:::::::::::                                   
-                        .:::::::::::::::::::::::::::::::::.        
-
-                  © Copyright of Ignition Avionics
-*/
-
-/**************************************************************************************************
-* File:        loops.h
-* Author:      Kunsh Jain
-* Created On:  2025-12-22
-* Brief:       Main loop declarations.
-* Description: Contains the `Loops` class used to run periodic tasks.
-***************************************************************************************************
-* HISTORY:
-* +----- (NEW | MODify | ADD | DELete)
-* |
-* No#   |       when       who                  what
-******+*********+**********+********************+**************************************************
-* 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
-**************************************************************************************************/
+#                                                                                                 
+#                                     ::                                                          
+#                                     ::                                                          
+#                                     ::                                                          
+#                                     ::                                                          
+#                                     ::                                                          
+#   ..    ..........    :.      ::      ::     .........  ..    ..........    ...      .        
+#   ::    ::            : .:.   ::     .::.       ::      ::    ::       :    :: :.    :        
+#   ::    ::   ..:::    :   .:. ::    ::::::      ::      ::    ::       :    ::   ::  :        
+#   ::    ::......::    :      :::    ::::::      ::      ::    ::.......:    ::     :::        
+#                                     ::::::                                                      
+#                                     :.::.:                                                      
+#                         .::::         ::          ::::.                                         
+#                       .::::::::.       ::       .:::::::::                                      
+#                       ::::::::::::....::::.....:::::::::::                                      
+#                        .:::::::::::::::::::::::::::::::::.                                      
+#
+#                  © Copyright of Ignition Avionics
+#
+# **************************************************************************************************
+# * File:        CMakeLists.txt
+# * Author:      Kunsh Jain
+# * Created On:  2025-12-22
+# * Brief:       Main build configuration.
+# * Description: CMake build script for the Pioneer project.
+# **************************************************************************************************
+# * HISTORY:
+# * +----- (NEW | MODify | ADD | DELete)
+# * |
+# * No#   |       when       |      who      |             what
+# ******+******************+***************+********************************************************
+# * 000   |    2025-12-22    |   Kunsh Jain  | Wrote the initial version of CMakeLists.txt.
+# **************************************************************************************************
 
 
 # Minimum CMake version required for this project
@@ -65,13 +64,14 @@ file(GLOB_RECURSE ARK_SOURCES
     "${ARK_PATH}/modules/*/*.cpp"
 )
 
-# Define the `pioneer` executable and the list of source files to compile
+# Add the new usercode directory to ARK_SOURCES or include it directly
 add_executable(pioneer 
     user/main.cpp
+    user/usercode/usercode.cpp  # Added your logic implementation here
     ${ARK_SOURCES}
 )
 
-# Add include directories used during compilation (private to this target)
+# Add the usercode folder to include directories
 target_include_directories(pioneer PRIVATE
     ${ARK_PATH}
     ${ARK_PATH}/kernel
@@ -80,6 +80,7 @@ target_include_directories(pioneer PRIVATE
     ${ARK_PATH}/system
     ${CMAKE_CURRENT_SOURCE_DIR}/tests
     ${CMAKE_CURRENT_SOURCE_DIR}/user
+    ${CMAKE_CURRENT_SOURCE_DIR}/user/usercode # Added for #include "usercode.h"
 )
 
 # Link libraries required by the firmware (Pico stdlib and hardware drivers)
