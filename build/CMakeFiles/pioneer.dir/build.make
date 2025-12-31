@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kunsh/Ignition/Pioneer
+CMAKE_SOURCE_DIR = /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kunsh/Ignition/Pioneer/build
+CMAKE_BINARY_DIR = /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pioneer.dir/depend.make
@@ -70,205 +70,219 @@ include CMakeFiles/pioneer.dir/progress.make
 include CMakeFiles/pioneer.dir/flags.make
 
 CMakeFiles/pioneer.dir/user/main.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/user/main.cpp.o: /home/kunsh/Ignition/Pioneer/user/main.cpp
+CMakeFiles/pioneer.dir/user/main.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/main.cpp
 CMakeFiles/pioneer.dir/user/main.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pioneer.dir/user/main.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/user/main.cpp.o -MF CMakeFiles/pioneer.dir/user/main.cpp.o.d -o CMakeFiles/pioneer.dir/user/main.cpp.o -c /home/kunsh/Ignition/Pioneer/user/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pioneer.dir/user/main.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/user/main.cpp.o -MF CMakeFiles/pioneer.dir/user/main.cpp.o.d -o CMakeFiles/pioneer.dir/user/main.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/main.cpp
 
 CMakeFiles/pioneer.dir/user/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/user/main.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/user/main.cpp > CMakeFiles/pioneer.dir/user/main.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/main.cpp > CMakeFiles/pioneer.dir/user/main.cpp.i
 
 CMakeFiles/pioneer.dir/user/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/user/main.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/user/main.cpp -o CMakeFiles/pioneer.dir/user/main.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/main.cpp -o CMakeFiles/pioneer.dir/user/main.cpp.s
+
+CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o: CMakeFiles/pioneer.dir/flags.make
+CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/usercode/usercode.cpp
+CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o -MF CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o.d -o CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/usercode/usercode.cpp
+
+CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/usercode/usercode.cpp > CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.i
+
+CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/user/usercode/usercode.cpp -o CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/ark.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/ark.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/ark.cpp
+CMakeFiles/pioneer.dir/ARK/ark.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/ark.cpp
 CMakeFiles/pioneer.dir/ARK/ark.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pioneer.dir/ARK/ark.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/ark.cpp.o -MF CMakeFiles/pioneer.dir/ARK/ark.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/ark.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/ark.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pioneer.dir/ARK/ark.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/ark.cpp.o -MF CMakeFiles/pioneer.dir/ARK/ark.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/ark.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/ark.cpp
 
 CMakeFiles/pioneer.dir/ARK/ark.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/ark.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/ark.cpp > CMakeFiles/pioneer.dir/ARK/ark.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/ark.cpp > CMakeFiles/pioneer.dir/ARK/ark.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/ark.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/ark.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/ark.cpp -o CMakeFiles/pioneer.dir/ARK/ark.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/ark.cpp -o CMakeFiles/pioneer.dir/ARK/ark.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/kernel/loops.cpp
+CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/loops.cpp
 CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o -MF CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/kernel/loops.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o -MF CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/loops.cpp
 
 CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/kernel/loops.cpp > CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/loops.cpp > CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/kernel/loops.cpp -o CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/loops.cpp -o CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/kernel/statesmanager.cpp
+CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/statesmanager.cpp
 CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o -MF CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/kernel/statesmanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o -MF CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/statesmanager.cpp
 
 CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/kernel/statesmanager.cpp > CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/statesmanager.cpp > CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/kernel/statesmanager.cpp -o CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/kernel/statesmanager.cpp -o CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/bmp/bmp.cpp
+CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/bmp/bmp.cpp
 CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/bmp/bmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/bmp/bmp.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/bmp/bmp.cpp > CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/bmp/bmp.cpp > CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/bmp/bmp.cpp -o CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/bmp/bmp.cpp -o CMakeFiles/pioneer.dir/ARK/modules/bmp/bmp.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/buzzer/buzzer.cpp
+CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/buzzer/buzzer.cpp
 CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/buzzer/buzzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/buzzer/buzzer.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/buzzer/buzzer.cpp > CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/buzzer/buzzer.cpp > CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/buzzer/buzzer.cpp -o CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/buzzer/buzzer.cpp -o CMakeFiles/pioneer.dir/ARK/modules/buzzer/buzzer.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/gnss/l89ha.cpp
+CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/gnss/l89ha.cpp
 CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/gnss/l89ha.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/gnss/l89ha.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/gnss/l89ha.cpp > CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/gnss/l89ha.cpp > CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/gnss/l89ha.cpp -o CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/gnss/l89ha.cpp -o CMakeFiles/pioneer.dir/ARK/modules/gnss/l89ha.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/ignitor/ignitor.cpp
+CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/ignitor/ignitor.cpp
 CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/ignitor/ignitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/ignitor/ignitor.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/ignitor/ignitor.cpp > CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/ignitor/ignitor.cpp > CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/ignitor/ignitor.cpp -o CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/ignitor/ignitor.cpp -o CMakeFiles/pioneer.dir/ARK/modules/ignitor/ignitor.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp
+CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mag/qmc5883l.cpp
 CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mag/qmc5883l.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp > CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mag/qmc5883l.cpp > CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/mag/qmc5883l.cpp -o CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mag/qmc5883l.cpp -o CMakeFiles/pioneer.dir/ARK/modules/mag/qmc5883l.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/mpu/mpu9250.cpp
+CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mpu/mpu9250.cpp
 CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/mpu/mpu9250.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mpu/mpu9250.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/mpu/mpu9250.cpp > CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mpu/mpu9250.cpp > CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/mpu/mpu9250.cpp -o CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/mpu/mpu9250.cpp -o CMakeFiles/pioneer.dir/ARK/modules/mpu/mpu9250.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/nrf/nrf24.cpp
+CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/nrf/nrf24.cpp
 CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/nrf/nrf24.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/nrf/nrf24.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/nrf/nrf24.cpp > CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/nrf/nrf24.cpp > CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/nrf/nrf24.cpp -o CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/nrf/nrf24.cpp -o CMakeFiles/pioneer.dir/ARK/modules/nrf/nrf24.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/modules/sdcard/sdcard.cpp
+CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/sdcard/sdcard.cpp
 CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/modules/sdcard/sdcard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o -MF CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/sdcard/sdcard.cpp
 
 CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/modules/sdcard/sdcard.cpp > CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/sdcard/sdcard.cpp > CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/modules/sdcard/sdcard.cpp -o CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/modules/sdcard/sdcard.cpp -o CMakeFiles/pioneer.dir/ARK/modules/sdcard/sdcard.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/system/sensors.cpp
+CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/sensors.cpp
 CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o -MF CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/system/sensors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o -MF CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/sensors.cpp
 
 CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/system/sensors.cpp > CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/sensors.cpp > CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/system/sensors.cpp -o CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/sensors.cpp -o CMakeFiles/pioneer.dir/ARK/system/sensors.cpp.s
 
 CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o: CMakeFiles/pioneer.dir/flags.make
-CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o: /home/kunsh/Ignition/Pioneer/ARK/system/watchdogs.cpp
+CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o: /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/watchdogs.cpp
 CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o -MF CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o -c /home/kunsh/Ignition/Pioneer/ARK/system/watchdogs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o -MF CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o.d -o CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.o -c /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/watchdogs.cpp
 
 CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/ARK/system/watchdogs.cpp > CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/watchdogs.cpp > CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.i
 
 CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/ARK/system/watchdogs.cpp -o CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/ARK/system/watchdogs.cpp -o CMakeFiles/pioneer.dir/ARK/system/watchdogs.cpp.s
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gp
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/platform.c.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2040/pico_platform/p
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platfo
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platfo
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sy
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sy
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -393,7 +407,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ir
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -407,7 +421,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ir
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.i: cmake_force
@@ -421,7 +435,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -435,7 +449,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.i: cmake_force
@@ -449,7 +463,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -463,7 +477,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_sync/criti
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.i: cmake_force
@@ -477,7 +491,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -491,7 +505,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeo
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -505,7 +519,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ti
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.i: cmake_force
@@ -519,7 +533,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/datet
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.i: cmake_force
@@ -533,7 +547,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.i: cmake_force
@@ -547,7 +561,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -561,7 +575,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ua
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -575,7 +589,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_cl
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -589,7 +603,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pl
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -603,7 +617,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vr
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -617,7 +631,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_wa
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
@@ -631,7 +645,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ti
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -645,7 +659,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootro
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
@@ -659,7 +673,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootro
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
@@ -673,7 +687,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_bo
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.i: cmake_force
@@ -687,7 +701,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -700,7 +714,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xo
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -714,7 +728,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_di
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -728,7 +742,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtim
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
@@ -742,7 +756,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtim
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
@@ -756,7 +770,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtim
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
@@ -769,7 +783,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtim
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -782,7 +796,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_op
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
@@ -795,7 +809,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divide
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
@@ -809,7 +823,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
@@ -823,7 +837,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -836,7 +850,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
@@ -849,7 +863,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -862,7 +876,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_int64_
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
@@ -876,7 +890,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
@@ -890,7 +904,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -903,7 +917,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
@@ -917,7 +931,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
@@ -930,7 +944,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -944,7 +958,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_mem_op
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
@@ -958,7 +972,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
@@ -972,7 +986,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_op
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
@@ -986,7 +1000,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standa
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -999,7 +1013,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building ASM object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o   -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
@@ -1013,7 +1027,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
@@ -1027,7 +1041,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_i
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -1041,7 +1055,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -1055,7 +1069,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -1069,7 +1083,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -1083,7 +1097,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -1097,7 +1111,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -1111,7 +1125,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -1125,7 +1139,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_fl
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
@@ -1139,7 +1153,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xi
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -1153,7 +1167,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/r
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -1167,7 +1181,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/r
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -1181,7 +1195,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usb
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -1195,7 +1209,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usb
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1209,7 +1223,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audi
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1223,7 +1237,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1237,7 +1251,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1251,7 +1265,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1265,7 +1279,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1279,7 +1293,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -1293,7 +1307,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1307,7 +1321,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1321,7 +1335,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1335,7 +1349,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbt
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1349,7 +1363,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vend
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1363,7 +1377,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vide
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1377,7 +1391,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.s: 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1391,7 +1405,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tus
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1405,7 +1419,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1419,7 +1433,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/pioneer.dir/flags.make
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/pioneer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.o -c /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -1433,6 +1447,7 @@ CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sp
 # Object files for target pioneer
 pioneer_OBJECTS = \
 "CMakeFiles/pioneer.dir/user/main.cpp.o" \
+"CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/ark.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o" \
 "CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o" \
@@ -1535,6 +1550,7 @@ pioneer_OBJECTS = \
 pioneer_EXTERNAL_OBJECTS =
 
 pioneer.elf: CMakeFiles/pioneer.dir/user/main.cpp.o
+pioneer.elf: CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/ark.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/kernel/loops.cpp.o
 pioneer.elf: CMakeFiles/pioneer.dir/ARK/kernel/statesmanager.cpp.o
@@ -1636,13 +1652,13 @@ pioneer.elf: CMakeFiles/pioneer.dir/build.make
 pioneer.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 pioneer.elf: /home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 pioneer.elf: CMakeFiles/pioneer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kunsh/Ignition/Pioneer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking CXX executable pioneer.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Linking CXX executable pioneer.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pioneer.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objdump -h /home/kunsh/Ignition/Pioneer/build/pioneer.elf > pioneer.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/kunsh/Ignition/Pioneer/build/pioneer.elf >> pioneer.dis
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/kunsh/Ignition/Pioneer/build/pioneer.elf pioneer.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/kunsh/Ignition/Pioneer/build/pioneer.elf pioneer.bin
-	_deps/picotool/picotool uf2 convert --quiet /home/kunsh/Ignition/Pioneer/build/pioneer.elf pioneer.uf2 --family rp2040
+	/usr/bin/arm-none-eabi-objdump -h /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/pioneer.elf > pioneer.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/pioneer.elf >> pioneer.dis
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/pioneer.elf pioneer.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/pioneer.elf pioneer.bin
+	/usr/local/bin/picotool uf2 convert --quiet /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/pioneer.elf pioneer.uf2 --family rp2040
 
 # Rule to build all files generated by this target.
 CMakeFiles/pioneer.dir/build: pioneer.elf
@@ -1653,6 +1669,6 @@ CMakeFiles/pioneer.dir/clean:
 .PHONY : CMakeFiles/pioneer.dir/clean
 
 CMakeFiles/pioneer.dir/depend:
-	cd /home/kunsh/Ignition/Pioneer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kunsh/Ignition/Pioneer /home/kunsh/Ignition/Pioneer /home/kunsh/Ignition/Pioneer/build /home/kunsh/Ignition/Pioneer/build /home/kunsh/Ignition/Pioneer/build/CMakeFiles/pioneer.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles/pioneer.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/pioneer.dir/depend
 

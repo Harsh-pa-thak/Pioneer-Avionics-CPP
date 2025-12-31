@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kunsh/Ignition/Pioneer
+CMAKE_SOURCE_DIR = /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kunsh/Ignition/Pioneer/build
+CMAKE_BINARY_DIR = /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunsh/Ignition/Pioneer/build/CMakeFiles /home/kunsh/Ignition/Pioneer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunsh/Ignition/Pioneer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunsh/Ignition/Pioneer/Pioneer-Avionics-CPP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2383,6 +2383,30 @@ user/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/user/main.cpp.s
 .PHONY : user/main.cpp.s
 
+user/usercode/usercode.o: user/usercode/usercode.cpp.o
+.PHONY : user/usercode/usercode.o
+
+# target to build an object file
+user/usercode/usercode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o
+.PHONY : user/usercode/usercode.cpp.o
+
+user/usercode/usercode.i: user/usercode/usercode.cpp.i
+.PHONY : user/usercode/usercode.i
+
+# target to preprocess a source file
+user/usercode/usercode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.i
+.PHONY : user/usercode/usercode.cpp.i
+
+user/usercode/usercode.s: user/usercode/usercode.cpp.s
+.PHONY : user/usercode/usercode.s
+
+# target to generate assembly for a file
+user/usercode/usercode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pioneer.dir/build.make CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.s
+.PHONY : user/usercode/usercode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2670,6 +2694,9 @@ help:
 	@echo "... user/main.o"
 	@echo "... user/main.i"
 	@echo "... user/main.s"
+	@echo "... user/usercode/usercode.o"
+	@echo "... user/usercode/usercode.i"
+	@echo "... user/usercode/usercode.s"
 .PHONY : help
 
 
