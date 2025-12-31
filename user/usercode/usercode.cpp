@@ -20,7 +20,7 @@
 
 /**************************************************************************************************
 * File:        main.cpp
-* Author:      Harsh
+* Author:      Kunsh Jain
 * Created On:  2025-12-22
 * Brief:       Entry point for Pioneer firmware on Pico.
 * Description: Initializes stdio and starts the `Ark` application which runs the main loop.
@@ -30,8 +30,8 @@
 * |
 * No#   |       when       who                  what
 ******+*********+**********+********************+**************************************************
-* 001 MODify    2025-12-23    Harsh               Actual UserCode logic for StatesManager
 * 000  NEW      2025-12-22   Kunsh Jain           Added UserCode part to StatesManager
+* 001 MODify    2025-12-23    Harsh               Actual UserCode logic for StatesManager
 **************************************************************************************************/
 #include "../../ARK/kernel/statesmanager.h"
 #include "../../ARK/system/sensors.h"
