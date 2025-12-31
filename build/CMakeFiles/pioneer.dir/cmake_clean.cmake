@@ -184,6 +184,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pioneer.dir/home/kunsh/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o.d"
   "CMakeFiles/pioneer.dir/user/main.cpp.o"
   "CMakeFiles/pioneer.dir/user/main.cpp.o.d"
+  "CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o"
+  "CMakeFiles/pioneer.dir/user/usercode/usercode.cpp.o.d"
   "pioneer.bin"
   "pioneer.dis"
   "pioneer.elf"
