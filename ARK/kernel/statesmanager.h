@@ -36,6 +36,8 @@
 #ifndef STATESMANAGER_H
 #define STATESMANAGER_H
 
+#include <string>
+    
 enum class FlightState {
     BOOT, IDLE, ARMED, LAUNCH, ASCENT, CRUISING, 
     APOGEE, DEPLOYMENT, DESCENT, LANDED, FAILSAFE

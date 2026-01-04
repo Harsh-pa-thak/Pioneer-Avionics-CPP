@@ -36,7 +36,7 @@
 // NOTE: Only headers and Doxygen comments were added. No behavior changed.
 
 #include "ark.h"
-
+SensorManager sensors;
 /**
  * \brief Default constructor for `Ark`.
  */

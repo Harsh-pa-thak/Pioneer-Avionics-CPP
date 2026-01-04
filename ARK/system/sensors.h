@@ -86,8 +86,27 @@ public:
      * \brief Query overall system health after InitAll().
      */
     bool IsHealthy() const { return _systemOk; }
+    
+    /**
+     * \brief Wrapper Classes
+     */
+    // Getters
+    float GetAltitude() const { return _alt; }
+    float GetTemperature() const { return _temp; }
+    float GetAccelZ() const { return _az; }
+    float GetAccelMagnitude() const { return std::sqrt(_ax*_ax + _ay*_ay + _az*_az); }
+    float GetHeading() const { return _hdg; }
+    bool IsArmCommanded() const { return true; } 
+    void SetCurrentState(const std::string& stateName) { _currentState = stateName; }
+
+    // Actuators
+    void ActivatePyroChannel(uint8_t channel);
+    void EnterBeaconMode();
 
 private:
+    const uint8_t PYRO_1 = 20;
+    const uint8_t PYRO_2 = 21;
+
     BMP280 _bmp;
     QMC5883L _mag;
     MPU9250 _mpu;
@@ -103,6 +122,7 @@ private:
     bool _b_ok=0, _m_ok=0, _imu_ok=0, _s_ok=0, _g_ok=0, _n_ok=0;
     bool _systemOk = false;
     std::string _packet = "INIT";
+    std::string _currentState = "BOOT";
     
     /**
      * \brief Build human-readable telemetry string stored in `_packet`.
@@ -117,5 +137,12 @@ private:
      */
     void PrintStatus(const char* name, bool ok, const char* val);
 };
+extern SensorManager sensors;
+#endif
 
+// I am just trying out things dont mid it @everyone In ARK/system/sensors.h under public and test/:
+#ifdef HITL_TEST
+    void MockAltitude(float a) { _alt = a; }
+    void MockAccel(float z, float mag) { _az = z; _ax = 0; _ay = 0; }
+    void MockArmCommand(bool arm) { /* logic to override IsArmCommanded */ }
 #endif

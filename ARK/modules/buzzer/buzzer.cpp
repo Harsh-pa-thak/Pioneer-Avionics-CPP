@@ -5,14 +5,14 @@
                                         ::                                                      
                                         ::                                                      
     ..    ..........    :.      ::      ::     .........  ..    ..........    ...      .        
-    ::    ::            : .:.   ::     .::.       ::      ::    ::       :    :: :.    :        
+    ::    ::            : .:.   ::      .::.       ::      ::    ::       :    :: :.    :        
     ::    ::   ..:::    :   .:. ::    ::::::      ::      ::    ::       :    ::   ::  :        
     ::    ::......::    :      :::    ::::::      ::      ::    ::.......:    ::     :::        
                                       ::::::                                                    
                                       :.::.:                                                    
                          .::::          ::          ::::.                                       
-                       .::::::::.       ::       .:::::::::                                   
-                       ::::::::::::....::::.....:::::::::::                                   
+                       .::::::::.       ::       .:::::::::                                     
+                       ::::::::::::....::::.....:::::::::::                                     
                         .:::::::::::::::::::::::::::::::::.        
 
                   © Copyright of Ignition Avionics
@@ -31,6 +31,7 @@
 * No#   |       when       who                  what
 ******+*********+**********+********************+**************************************************
 * 000  NEW      2025-12-22   Kunsh Jain           Added header and Doxygen
+* 001  MODify   2025-12-24   Kunsh Jain           Added Stop() and made PlayTone non-blocking
 **************************************************************************************************/
 
 #include "buzzer.h"
@@ -45,10 +46,12 @@ void Buzzer::Init() {
     pwm_set_enabled(_slice, true);
 }
 
-/** \brief Play a single tone at `freq` Hz for `duration_ms` milliseconds. */
+/** * \brief Play a single tone at `freq` Hz. 
+ * \details This is now non-blocking. Call Stop() to silence.
+ */
 void Buzzer::PlayTone(uint freq, uint duration_ms) {
     if (freq == 0) {
-        pwm_set_chan_level(_slice, pwm_gpio_to_channel(_pin), 0);
+        Stop();
     } else {
         uint32_t clock = 125000000;
         uint32_t divider = clock / (freq * 65536);
@@ -57,7 +60,11 @@ void Buzzer::PlayTone(uint freq, uint duration_ms) {
         pwm_set_wrap(_slice, 65535);
         pwm_set_chan_level(_slice, pwm_gpio_to_channel(_pin), 32768);
     }
-    sleep_ms(duration_ms);
+}
+
+/** \brief Stop the PWM output to silence the buzzer. */
+void Buzzer::Stop() {
+    pwm_set_chan_level(_slice, pwm_gpio_to_channel(_pin), 0);
 }
 
 /** \brief Play a short Mario melody by sequencing tones. */
@@ -67,7 +74,12 @@ void Buzzer::PlayMario() {
         {523, 150}, {660, 150}, {0, 150}, {784, 150}, {0, 150}, {392, 150}
     };
     for(int i=0; i<11; i++) {
-        PlayTone(mel[i][0], mel[i][1]);
+        if (mel[i][0] == 0) {
+            Stop();
+        } else {
+            PlayTone(mel[i][0], 0);
+        }
+        sleep_ms(mel[i][1]);
     }
-    pwm_set_chan_level(_slice, pwm_gpio_to_channel(_pin), 0);
+    Stop();
 }
