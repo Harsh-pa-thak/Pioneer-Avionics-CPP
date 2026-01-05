@@ -171,6 +171,15 @@ void SensorManager::Update() {
 void SensorManager::BuildPacket() {
     char buf[512];
     uint32_t ts = to_ms_since_boot(get_absolute_time());
+    //snprintf(buf, sizeof(buf), 
+    //         "T:%lu | B:%d M:%d I:%d S:%d | A:%.1f | H:%.1f | ACC:%.2f,%.2f,%.2f | GYR:%.1f,%.1f,%.1f", 
+    //         ts, _b_ok, _m_ok, _imu_ok, _s_ok, _alt, _hdg, _ax, _ay, _az, _gx, _gy, _gz);
+
+    
+    snprintf(buf, sizeof(buf),
+            "%lu,%d,%d,%d,%d,%.1f,%.1f,%.2f,%.2f,%.2f,%.1f,%.1f,%.1f",
+            ts, _b_ok, _m_ok, _imu_ok, _s_ok, _alt, _hdg, _ax, _ay, _az, _gx, _gy, _gz);
+    
     
     // Added [_currentState] to the packet string
     snprintf(buf, sizeof(buf), 
