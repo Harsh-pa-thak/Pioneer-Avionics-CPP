@@ -50,6 +50,7 @@ public:
     void PlayTone(uint freq, uint duration_ms);
     /** \brief Play a short melody (Mario). */
     void PlayMario();
+    void Stop();
 private:
     uint _pin;
     uint _slice;

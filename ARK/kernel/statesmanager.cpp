@@ -49,3 +49,4 @@ void StatesManager::HandleDeployment() { onUserLogic(currentState); }
 void StatesManager::HandleDescent()    { onUserLogic(currentState); }
 void StatesManager::HandleLanded()     { onUserLogic(currentState); }
 void StatesManager::HandleFailsafe()   { onUserLogic(currentState); }
+

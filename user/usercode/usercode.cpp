@@ -40,12 +40,12 @@
 extern SensorManager sensors;
 
 // its better to have a config file for these constants
-static constexpr float LAUNCH_ACCEL_G          = 0f;
+static constexpr float LAUNCH_ACCEL_G          = 0.0f;
 static constexpr int   LAUNCH_CONFIRM_TICKS    = 5;     // 500 ms 
-static constexpr float APOGEE_DROP_METERS      = 0f;
-static constexpr float MAIN_DEPLOY_ALT_METERS  = 0f;
+static constexpr float APOGEE_DROP_METERS      = 0.0f;
+static constexpr float MAIN_DEPLOY_ALT_METERS  = 0.0f;
 static constexpr int   LAND_CONFIRM_TICKS      = 50;    // 5 sec 
-static constexpr float LAND_ALT_DELTA_METERS   = 0f;
+static constexpr float LAND_ALT_DELTA_METERS   = 0.0f;
 
 // also can be in config
 static float ground_altitude   = 0.0f;
