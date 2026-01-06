@@ -56,9 +56,17 @@ int main() {
     gpio_put(LED_PIN, 1);
     
     sleep_ms(5000); // Wait for power to stabilize
+  
+    gpio_put(LED_PIN, 0);
 
     printf("\n--- PIONEER SYSTEM START ---\n");
     printf("Initializing Ark Kernel...\n");
+  
+    gpio_put(LED_PIN, 1);
+    
+    sleep_ms(100); // Wait for power to stabilize
+  
+    gpio_put(LED_PIN, 0);
 
     Ark ignition;
     ignition.Init();
@@ -69,5 +77,7 @@ int main() {
     
     ignition.Start();
     
+    printf("Loop Started.-->However this message wont be seen\n");
+  
     return 0;
 }
